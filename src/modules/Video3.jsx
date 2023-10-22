@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ClassToFunctionCompRenderer } from "../layout/ClassToFunctionCompRenderer";
+import { FunctionToClassCompRenderer } from "../layout/FunctionToClassCompRenderer";
 
 function Video3Function() {
 
@@ -13,6 +13,9 @@ function Video3Function() {
 
 class Video3Class extends Component {
   render() {
+    //render is compulsory in class components
+    //props is automatically gets added to the object that creates this class
+    //and can be accessed using this.props
     return (
       <>
         <h1>Class Component</h1>
@@ -22,11 +25,12 @@ class Video3Class extends Component {
 }
 
 
-export class Video3 extends Component {
-  render() {
+export default class Video3 extends Component {
+  render() { 
     return (
       <>
-        <ClassToFunctionCompRenderer
+        <FunctionToClassCompRenderer
+          videoTitle={"Intro to Class Components"}
           ClassBasedComponent={<Video3Class />} 
           FunctionBasedComponent={<Video3Function />}
         />
@@ -34,5 +38,3 @@ export class Video3 extends Component {
     )
   }
 }
-
-export default Video3

@@ -5,10 +5,16 @@ function App() {
 
   return (
     <>
-      <h1>Welcome to React Class Components</h1>
+      <h1 style={{
+        margin:"3rem",
+        fontSize: "3rem",
+      }}>Welcome to React Class Components</h1>
       <ol>
         <li>
           <Link to='/videos/3'>Video 3</Link>
+        </li>
+        <li>
+          <Link to="/videos/4">Video 4</Link>
         </li>
       </ol>
     </>
