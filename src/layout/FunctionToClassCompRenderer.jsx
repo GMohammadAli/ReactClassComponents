@@ -28,16 +28,22 @@ export class FunctionToClassCompRenderer extends Component {
             });
           }}
         >
-          Switch To {this.state.showClassBasedComponent ? "Class" : "Function"}{" "}
+          Switch To {this.state.showClassBasedComponent ? "Function" : "Class"}{" "}
           Component?
         </button>
-        <div style={{
-          display:"flex",
-          margin:"3rem",
-          alignItems: "center",
-          justifyContent: "center"
-        }}>
+        <div
+          style={{
+            display: "flex",
+            margin: "3rem",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <Link to="/">Home</Link>
+        </div>
+        <div>
+          Current Component Type-{" "}
+          {this.state.showClassBasedComponent ? "Class" : "Function"}
         </div>
       </div>
     );
