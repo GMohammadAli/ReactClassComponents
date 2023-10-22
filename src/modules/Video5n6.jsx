@@ -40,14 +40,20 @@ function Video5n6Function() {
 }
 
 class Video5n6Class extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    //if you want to use props inside of constructor
+    //function, props must be passed like above
     this.state = {
       goOut: true,
     };
+    //when we are not using arrow functions, we need to bind
+    //all the class functions that are not arrow functions like this
+    //to 'this' of current class
+    this.toggleGoOut = this.toggleGoOut.bind(this);
   }
 
-  toggleGoOut = () => {
+  toggleGoOut() {
     this.setState((prevState) => {
       return {
         goOut: !prevState.goOut,
