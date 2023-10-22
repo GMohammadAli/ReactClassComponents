@@ -22,6 +22,9 @@ function App() {
         <li>
           <Link to='/videos/7n8n9'>Video 7, 8 & 9</Link>
         </li>
+        <li>
+          <Link to='/videos/10'>Video 10</Link>
+        </li>
       </ol>
     </>
   );
