@@ -28,6 +28,9 @@ function App() {
         <li>
           <Link to='/videos/12'>Vidoe 12</Link>
         </li>
+        <li>
+          <Link to='/videos/13'>Video 13</Link>
+        </li>
       </ol>
     </>
   );
