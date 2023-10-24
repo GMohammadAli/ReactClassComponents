@@ -1,6 +1,19 @@
 import React, { Component } from "react";
 import { FunctionToClassCompRenderer } from "../layout/FunctionToClassCompRenderer";
 
+export default class Video3 extends Component {
+  render() {
+    return (
+      <>
+        <FunctionToClassCompRenderer
+          videoTitle={"Intro to Class Components"}
+          ClassBasedComponent={<Video3Class />}
+          FunctionBasedComponent={<Video3Function />}
+        />
+      </>
+    );
+  }
+}
 function Video3Function() {
 
   return (
@@ -9,7 +22,6 @@ function Video3Function() {
     </>
   );
 }
-
 
 class Video3Class extends Component {
   render() {
@@ -21,20 +33,5 @@ class Video3Class extends Component {
         <h1>Class Component</h1>
       </>
     );
-  }
-}
-
-
-export default class Video3 extends Component {
-  render() { 
-    return (
-      <>
-        <FunctionToClassCompRenderer
-          videoTitle={"Intro to Class Components"}
-          ClassBasedComponent={<Video3Class />} 
-          FunctionBasedComponent={<Video3Function />}
-        />
-      </>
-    )
   }
 }

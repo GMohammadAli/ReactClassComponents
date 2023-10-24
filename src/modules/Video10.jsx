@@ -51,7 +51,7 @@ function Video10Function() {
   );
 }
 
-export class Video10Class extends Component {
+class Video10Class extends Component {
     constructor() {
         super()
         this.state = {
