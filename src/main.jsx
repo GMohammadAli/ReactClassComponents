@@ -8,6 +8,7 @@ import Video4 from './modules/Video4.jsx'
 import Video5n6 from './modules/Video5n6.jsx'
 import Video7n8n9 from './modules/Video7n8n9.jsx'
 import Video10 from './modules/Video10.jsx'
+import Video12 from './modules/Video12.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/videos/5n6' element={<Video5n6 />}/>
       <Route path='/videos/7n8n9' element={<Video7n8n9 />}/>
       <Route path='/videos/10' element={<Video10 />}/>
+      <Route path='/videos/12' element={<Video12 />}/>
     </Routes>
   </BrowserRouter>
 )
