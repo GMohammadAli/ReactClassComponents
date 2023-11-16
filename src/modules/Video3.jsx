@@ -15,7 +15,6 @@ export default class Video3 extends Component {
   }
 }
 function Video3Function() {
-
   return (
     <>
       <h1>Functional Component</h1>
